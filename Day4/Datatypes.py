@@ -1,3 +1,4 @@
+'''
 # Datatypes 
 
 # A datatypes means what kind of value a variable is holding and what operations it can perform . 
@@ -96,3 +97,128 @@ print(s)
 
 l=[1,2,3,4,5,5,"sairam",99.9,99.9]
 print(set(l))
+
+'''
+# Datatypes in python 
+
+# what is a datatype ?? 
+# what kind of data a variable is holding and what operations have to performed on that variable. 
+
+a=100  # ---> numeric datatype 
+b= "sai"   #---> sequence datatype 
+# res= a + b 
+# print(res)
+
+
+# types to datatypes 
+# Numeric datatype  ----> mathematical operations 
+        # intergers ---> 0 , +ve , -ve 
+        # float  ---> value with decimal points , 10.99 , 99977.876854 
+        # complex ---> imaginary numbers (a+jb , 3+4j , 8-7j)
+
+# sequence datatype 
+# string  ---> group of characters 
+name = "sairam" , "shiva"  # ('sairam', 'shiva')
+print(name)
+
+# print(name[0])
+# print(name[1])
+# print(name[-1])
+
+# indexing ---> +ve index  ---> starts from 0 to n-1 (n is lenght of the string)
+# -ve index ---> -1 to end the string 
+
+
+# list  ---> 
+# tuple  ---> () 
+# range --->
+
+# collection datatypes ---> multiple value as a collection 
+ 
+# list  ---> [] ---> square brackets  
+# multiple values of different datatypes 
+# mutable sequence 
+# it can be changed 
+# ordered collection of data 
+# allows duplicate values 
+
+
+names = [["keerthi", "sairam", "naveen"], ["sumit", 98] ,[100 , 67 , 99796.9877]]
+print(names)
+
+print(names[0][0])
+
+
+# list methods 
+print(names.append(7777))
+print(names)
+
+#print(names.remove(98))
+print(names)
+
+print(names.append(7777))
+print(names)
+
+
+# tuple 
+# --->() ---> multiple values 
+# ordered collection 
+# immutable 
+# allows duplicates 
+# faster than ist 
+
+
+t=("keerthi", "sairam", "naveen", "sumit", 98, 100 , 67 , 99796.9877)
+print(t)
+
+
+# nested list 
+
+#names = [["keerthi", "sairam", "naveen"], ["sumit", 98] ,[100 , 67 , 99796.9877]]
+#print(names)
+
+
+print(names[0][0])
+
+
+
+# set ---> {}
+# unordered collection data
+# uniques elements 
+# not allow duplictes 
+
+s={101 , 102 , 103 , 101 ,102}
+print(s)
+
+
+y=[1,1,1,3,4,5,6,5,4,5,4,5,5,5,5]
+print(type(y))
+
+print(type(set(y)))
+
+
+# dictionary  --> stores the data in the form of key-value pair 
+
+# key-value pair -------> "name"="sairam" ,"age" = 29
+
+dict={"id":101 , "name":"sairam" ,"age" : 29}
+print(dict)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

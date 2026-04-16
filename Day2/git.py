@@ -45,6 +45,8 @@
 # git config --global user.name "sairammerugumalla9966"
 # git config --global user.emai "sairammerugumalla@gmail.com"
 
+# git config --global --list
+
 # git init ---> initialization 
 
 # git add filename / git add .  ---> local repo 
@@ -55,4 +57,4 @@
 
 # git pull orign main/ master 
 
-# git clone "https://github.com/sairammerugumalla9966/PYTHON_BATCH3.git"
+# git clone "https://github.com/sairammerugumalla9966/PYTHON_BATCH4.git"

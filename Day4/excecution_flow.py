@@ -5,6 +5,8 @@
 
 # python filename.py
 
+name="python training"
+print(name)
 
 print("step3")
 
@@ -31,6 +33,9 @@ print("step2")
 print("step1")
 
 print("step2")
+
+
+
 
 
 
