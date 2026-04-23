@@ -3,7 +3,7 @@
 # it is also called as implicit type conversion 
 # happenes when python automatically converts one data type to another during an operation 
 
-#  
+'''  
 #example :
 
 a=10 
@@ -33,7 +33,8 @@ print()
 
 
 # Type conversion 
-# Explicit conversion 
+
+# also called as Explicit conversion 
 # developer manually converts the data types 
 
 #int() ----> converts to interger 
@@ -67,3 +68,5 @@ print(list(s))
 
 s={50, 40, 30, 20, 10}
 print(list(s))
+'''
+

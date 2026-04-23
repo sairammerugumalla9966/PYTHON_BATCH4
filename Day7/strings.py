@@ -1,4 +1,4 @@
-'''
+
 # STRINGS 
 
 # STRINGS IN PYTHON
@@ -9,6 +9,11 @@
 
 name = "Python"
 city = 'Hyderabad'
+
+age = 99
+print(age)
+
+
 
 # **Immutable** → once created, it cannot be changed.
 
@@ -42,11 +47,12 @@ print(address)
 msg = "Welcome to Python"
 print(len(msg))
 
+
 ## Example 4: Accessing a Character
 
-language = "Python is my Favourite language."
+language = "Python is my Favourite language."  # start from (0) last value in the positive index(n-1) 
 print(language[0])
-print(language[-1])
+print(language[-1]) # start value in the negative index(-1) last value in -ve index(n)
 
 
 ## Example 5: Immutability Proof
@@ -63,9 +69,9 @@ print(s)
 
 # Example 1: `upper()` and `lower()`
 
-
-text = "python"
+text = "PythON"
 print(text.upper())
+
 print(text.lower())
 
 
@@ -116,13 +122,14 @@ else:
     print("Invalid Email")
 
 
+
 ## INDEXING IN STRINGS
 
 ## What is Indexing?
 
 # Accessing characters using **position numbers**.
-# Index starts from **0**
-
+# Index starts from **0** ends at (n-1) ----> positive index
+# Index starts from **-1** ends at (n) ----> negative index
 
 ## Example 1: Positive Indexing
 
@@ -140,7 +147,7 @@ print(word[-3])
 ## Example 3: First and Last Character
 
 name = "Sairam"
-print(name[0])
+print(name[0] ,name[1])
 print(name[-1])
 
 
@@ -148,17 +155,26 @@ print(name[-1])
 
 text = "Python"
 
-for i in range(len(text)):
-    print(text[i])
+#for i in range(len(text)):
+    # print(text[i])
+
+
+for char in "Python":
+    print(char)
+
 
 
 ## Example 5: Character Validation
 
-password = "Admin123"
+password = "admin123"
 print(password[0].isupper())
 
+name = "Sairam is a super man"
+print(name[12],name[13],name[14],name[15],name[16],name[17])
 
-# SLICING IN STRINGS
+
+
+# SLICING IN STRINGS (to extract a substring from a string)
 #Syntax
 
 # string[start : end : step]
@@ -166,14 +182,14 @@ print(password[0].isupper())
 ## Example 1: Basic Slicing
 
 word = "Python"
-print(word[1:4])
+print(word[5:15])
 
 
 ## Example 2: Omit Start / End
 
-print(word[:3])
-print(word[3:])
-
+print(word[:6])
+print(word[2:])
+'''
 ## Example 3: Negative Slicing
 
 print(word[-4:-1])
@@ -191,41 +207,6 @@ print(word[::-1])
 acc = "123456789012"
 print("********" + acc[-4:])
 
-
-# STRING FORMATTING (**)
-
-## Method 1: `format()`
-
-## Example 1
-
-
-name = "Sairam"
-age = 25
-
-print("My name is {} and age is {}".format(name, age))
-
-
-## Example 2: Positional Formatting
-print("Name: {0}, Age: {1}".format(name, age))
-
-
-## Example 3: Named Formatting
-print("Name: {n}, Age: {a}".format(n=name, a=age))
-
-## Method 2: f-Strings (MOST USED )
-
-## Example 4: Simple f-String
-
-print(f"My name is {name} and age is {age}")
-
-## Example 5: Real-Time Invoice
-
-item = "Laptop"
-price = 50000
-qty = 2
-
-print(f"Item: {item}")
-print(f"Total Amount: {price * qty}")
 
 
 #  STRING IMMUTABILITY
@@ -281,24 +262,61 @@ text = "Python"
 for i in range(len(text)):
     print(text[i])
 
-
-
-name = "Sairam"
-age = 25
-print("My name is {} and age is {}".format(name, age))
-
-
 '''
 
+# String Formatting : the process of inserting varibales / expressions in a string 
+
+# format ?? 
+
+name = "nag mama"
+print(name ,"is a super hero")
+
+print(f"i love python {name}")
+
+# 3 types of string formatting 
+
+# f-strings(formatted string literals)
+
+# f"text"{variable}
+'''
+names = "sairam"
+job= "trainer"
+print(f"i love python {names}")
+
+print(f"im {names} and im a python {job}")
+
+fries = int(input("enter price item 1"))
+lays =  int(input("enter price item 2"))
+biryani =  int(input("enter price item 3"))
+
+print(f"total bill : {fries + lays + biryani}")
+'''
+ 
+for i in range(5):
+    print(f"loop {i}")
+
+# str.fortmat() 
+
+name ="chiru"
+print("hello {}".format(name))
+
+print("Name : {}, job : {}".format("Deepika", "Python Developer"))
+
+print("Name : {1}, job : {0}".format("Deepika", "Python Developer"))
+
+for i in range(5):
+    print("loop {}".format(i))
+
+
+# % formatting(old style)
+
+
+name ="chiru"
+films = 155.00
+print("Name : %s, Films : %d" %(name ,films))
 
 
 
-
-
-
-
-
-
-
+print(10/2) # 5.0
 
 
