@@ -1,3 +1,4 @@
+'''
 # Types of arguments 
 
 # positional arguments 
@@ -77,4 +78,22 @@ def details(**kwargs):
     return kwargs
 
 print(details(name="Rocky",age=28,role="trainer",salary=50000))
+
+
+'''
+def details(beta,*mummy,**papa):
+    return beta,mummy,papa
+
+print(details(10,"sumit",22,"python developer" ,name="Rocky",age=28,role="trainer",salary=50000))
+
+
+
+def login(**data):
+    if data.get("username") == "admin" and data.get("password") == "Rocky123":
+        return "login success"
+    
+    return "login failed"
+
+print(login(username="admin" , password="Rocky123"))
+print(login(username="admin" , password="Rocky12"))
 
