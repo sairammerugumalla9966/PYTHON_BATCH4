@@ -92,8 +92,6 @@ print(obji.names)
 obji.sampleFunction()
 
 
-
-
 def sampleMethod():
     print("with out self ")
 
@@ -101,5 +99,57 @@ sampleMethod()
 
 
 # constructor (__init__) : a function which is called automatically while creating objects 
+# this __init__ method is used to store the initial attributes in an object 
+# constructor will intialize the attributes 
+
+'''
+syntax :
+
+class ConstructorClass:
+
+    def __init__(self,paramter1 , parameter2 ):
+        self.parameter1= paramter1
+        self.parameter2= parameter2
+
+obj = ConstructorClass()
+
+'''
+
+# ac_no , ac_name , ifsccode , balance
+
+class BankAccount:
+
+    def __init__(self , ac_no , ac_name , ifscocode , balance):
+        self.ac_no = ac_no
+        self.ac_name = ac_name
+        self.ifsccode = ifscocode
+        self.balance = balance
+
+    def AcBalance(self):
+        print(self.ac_name ,"Your account balance is :", self.balance)
+
+    
+    def deposite(self ,amount):
+        self.balance += amount
+
+    
+    def withdraw(self , amount):
+        if amount <= self.balance:
+            self.balance-= amount
+        else:
+            print("insufficient balance")
+
+sairam = BankAccount(101011202099 , "sairam", "BNK1020" , 50000)
+sairam.AcBalance()
+
+rocky = BankAccount(101011202098 , "Rocky", "BNK1020" , 100000)
+rocky.AcBalance()
+rocky.deposite(10000)
+rocky.AcBalance()
+
+deepika = BankAccount(101011202097 , "Deepika", "BNK1020" , 70000)
+deepika.withdraw(30000)
+deepika.AcBalance()
+
 
 
