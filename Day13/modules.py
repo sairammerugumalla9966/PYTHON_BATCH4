@@ -19,7 +19,7 @@ obj.demo()
 # resuablity
 # individual development 
 
-
+'''
 # inbuilt modules
 import math
 
@@ -73,8 +73,6 @@ else:
 
 
 # help("modules")
-
-'''
 __future__          _stat               fileinput           rlcompleter
 __hello__           _statistics         fnmatch             runpy
 __phello__          _string             fractions           sched
@@ -150,3 +148,44 @@ _sre                faulthandler        re
 _ssl                filecmp             reprlib  
 
 '''
+
+# In built modules :
+
+import math
+
+print(math.ceil(22.9))  # round numbers to nearest largest number 
+print(math.floor(22.9))   # round numbers to nearest smallest number 
+
+print(abs(-10))
+print(math.fabs(-10.3))
+
+print(math.factorial(5))
+print(math.sqrt(81))
+
+
+import random
+
+print(random.randint(1000,9999))
+
+print(random.random())
+
+print(random.choice([1,45,65,67,89,90,34,55,65]))
+
+print(random.sample([1,45,65,67,89,90,34,55,65],3))
+
+print(random.sample(["sai","ram","sumit","deepika","gautum"],3))
+
+
+import datetime
+
+today = datetime.datetime.now()
+print(today)
+
+
+print(dir(datetime))
+
+
+# library ---> packages --> modules ---> classes ---> methods , attribuites(variables)
+
+
+
